@@ -83,7 +83,7 @@ public class QR_generator extends AppCompatActivity {
 
             // if the edittext inputs are empty then execute
             // this method showing a toast message.
-            Toast.makeText(QR_generator.this, "Enter some text to generate QR Code", Toast.LENGTH_SHORT).show();
+            Toast.makeText(QR_generator.this, "Invalid Paypal Account", Toast.LENGTH_SHORT).show();
         } else {
 
 
@@ -135,10 +135,6 @@ public class QR_generator extends AppCompatActivity {
         btnSaveImage.setOnClickListener(view -> saveImage(bitmap));
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-    }
 
     private void saveImage(Bitmap finalBitmap) {
 

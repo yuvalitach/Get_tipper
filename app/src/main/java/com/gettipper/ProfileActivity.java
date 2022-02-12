@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -40,10 +39,6 @@ public class ProfileActivity extends AppCompatActivity {
         uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-    }
 
 
 
@@ -112,35 +107,4 @@ public class ProfileActivity extends AppCompatActivity {
 
 
 
-//    private ProfileActivityBinding binding;
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        binding = ProfileActivityBinding.inflate(getLayoutInflater());
-//        setContentView(binding.getRoot());
-//
-//
-//        firebaseAuth = FirebaseAuth.getInstance();
-//        checkUserStatus();
-//
-//
-//    }
-//
-//    private void checkUserStatus() {
-//    //get current user
-//        FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
-//        if(firebaseUser!=null){
-//            //user is logged in
-//            String phone = firebaseUser.getPhoneNumber();
-//
-////            binding.ProfileActivityPhoneTv.setText(phone);
-//        }
-//
-//        else{
-//            //use is not logged in
-//            finish();
-//        }
-//
-//
-//    }
 }

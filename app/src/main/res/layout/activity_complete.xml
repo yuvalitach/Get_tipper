@@ -44,18 +44,6 @@
         android:orientation="horizontal">
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/complete_activity_btn_Exit"
-            style="@style/Widget.MaterialComponents.Button"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_marginHorizontal="20dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Continue"
-            android:background="@drawable/rect_rounded_button"
-            />
-
-        <com.google.android.material.button.MaterialButton
             android:id="@+id/complete_activity_btn_Back"
             style="@style/Widget.MaterialComponents.Button"
             android:layout_width="0dp"
@@ -64,9 +52,23 @@
             android:layout_marginHorizontal="20dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Continue"
+            android:text="Back"
             android:background="@drawable/rect_rounded_button"
             />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/complete_activity_btn_Exit"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Exit"
+            android:background="@drawable/rect_rounded_button"
+            />
+
+
     </LinearLayout>
 
 </LinearLayout>

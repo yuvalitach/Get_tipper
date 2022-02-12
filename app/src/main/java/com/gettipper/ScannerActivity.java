@@ -59,10 +59,12 @@ public class ScannerActivity extends AppCompatActivity {
         return true;
     }
 
+
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.menu_item_changeCustomer:
+            case R.id.menu_item_changeServiceProvider:
                 startActivity((new Intent(this, QR_generator.class)));
                 return true;
             case R.id.menu_item_updateDetails:
@@ -84,6 +86,7 @@ public class ScannerActivity extends AppCompatActivity {
         //appMenu
         mtoolbar = findViewById(R.id.main_toolbar);
         setSupportActionBar(mtoolbar);
+
 
         previewView = findViewById(R.id.scanner_activity_previewView);
         this.getWindow().setFlags(1024, 1024);
@@ -231,6 +234,14 @@ public class ScannerActivity extends AppCompatActivity {
             }
         }
     }
+
+//    @Override
+//    protected void onStop() {
+//        super.onStop();
+//        startActivity(new Intent(this, CompleteActivity.class));
+//
+//    }
+
 
 }
 
