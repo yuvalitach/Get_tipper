@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <Button
+        android:id="@+id/profile_activity_btn_logout"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:textSize="10dp"
+        android:background="@drawable/rect_rounded_button"
+        android:text="Log out" />
+
+    <ImageView
+        android:id="@+id/register_activity_logo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/get_tipper_logo" />
+
+    <TextView
+        android:id="@+id/register_activity_header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/conthrax_sb"
+        android:text="Verification"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/aretha_light"
+        android:gravity="start"
+        android:text="Full name"
+        android:textColor="#534fbe"
+        android:textSize="15sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/profile_activity_EDT_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:errorEnabled="true"
+
+        android:layout_margin="5dp"
+        android:hint="Your full name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout><TextView
+        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/aretha_light"
+        android:gravity="start"
+        android:text="Email"
+        android:textColor="#534fbe"
+        android:textSize="15sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/profile_activity_EDT_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:errorEnabled="true"
+        android:layout_margin="5dp"
+        android:hint="Your email address">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/aretha_light"
+        android:gravity="start"
+        android:text="Paypal name"
+        android:textColor="#534fbe"
+        android:textSize="15sp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/profile_activity_EDT_paypalName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:errorEnabled="true"
+        android:layout_margin="5dp"
+        android:hint="Your Paypal account name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/aretha_light"
+        android:gravity="start"
+        android:text="Choose your status"
+        android:textColor="#c8ced9"
+        android:textStyle="bold"
+        android:textSize="15sp" />
+
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:checkedButton="@+id/profile_activity_RB_customer"
+    >
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:id="@+id/profile_activity_RB_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="#534fbe"
+        android:fontFamily="@font/aretha_light"
+        android:text="Customer"
+        android:buttonTint="#534fbe"
+        />
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:id="@+id/profile_activity_RB_serviceProvider"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="#534fbe"
+        android:fontFamily="@font/aretha_light"
+        android:buttonTint="#534fbe"
+        android:text="Service Provider"
+        />
+
+
+</RadioGroup>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/profile_activity_btn_phone_continue"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Continue"
+        android:background="@drawable/rect_rounded_button"
+         />
+
+
+</LinearLayout>
+</ScrollView>

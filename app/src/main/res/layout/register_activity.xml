@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/register_activity_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/get_tipper_logo"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/register_activity_header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verification"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/conthrax_sb"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <!--    For phone number input-->
+    <LinearLayout
+        android:id="@+id/register_activity_Ll_phoneRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your phone number"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#534fbe"
+        android:textStyle="bold"
+        android:fontFamily="@font/aretha_light"
+        android:layout_gravity="center_horizontal"
+
+        />
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/we_will_send_you_one_time_password_n_on_this_mobile_phone"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:textColor="#c8ced9"
+        android:lines="2"
+        android:fontFamily="@font/aretha_light"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        />
+
+    <EditText
+        android:id="@+id/register_activity_EtPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#F5F5F5"
+        android:hint="+972xxxxxxxxx"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textColorHint="#c5c5c5" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/register_activity_btn_phone_continue"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Continue"
+        android:background="@drawable/rect_rounded_button"
+        />
+    </LinearLayout>
+
+    <!--For Verification code input-->
+    <LinearLayout
+        android:id="@+id/register_activity_Ll_verificationRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Code"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:textColor="#534fbe"
+            android:textStyle="bold"
+            android:fontFamily="@font/aretha_light"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/register_activity_TvCodeDescription"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Enter the verification code we sent to\n +972xxxxxxxxx"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:textColor="#c8ced9"
+            android:textStyle="bold"
+            android:lines="2"
+            android:fontFamily="@font/aretha_light"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            />
+
+        <EditText
+            android:id="@+id/register_activity_EtCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#F5F5F5"
+            android:inputType="numberPassword"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textColorHint="#c5c5c5" />
+
+        <TextView
+            android:id="@+id/register_activity_TvResendCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="#7777"
+            android:text="@string/i_didn_t_receive_code_send_again"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/register_activity_btn_Verification_continue"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="300dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Continue"
+            app:cornerRadius="10dp"
+            android:background="@drawable/rect_rounded_button"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

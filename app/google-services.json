@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "187932264713",
+    "project_id": "get-tipper",
+    "storage_bucket": "get-tipper.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:187932264713:android:e53a6d28fb4cf767af6bd8",
+        "android_client_info": {
+          "package_name": "com.gettipper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "187932264713-uh4j6r9ecionms3sf5iehjdjlmkcnk2s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVTSv5KnQxw_MEV_pqaHNfkguJ6wEMEe8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "187932264713-uh4j6r9ecionms3sf5iehjdjlmkcnk2s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
